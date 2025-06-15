@@ -3,6 +3,7 @@ document.getElementById("add").addEventListener("click", function () {
     const number2 = parseFloat(document.getElementById("number2").value) || 0;
     const result = number1 + number2;
     document.getElementById("calculation-result").textContent = result;
+    return;
 })
 
 document.getElementById("subtract").addEventListener("click", function () {
@@ -10,6 +11,7 @@ document.getElementById("subtract").addEventListener("click", function () {
     const number2 = parseFloat(document.getElementById("number2").value) || 0;
     const result = number1 - number2;
     document.getElementById("calculation-result").textContent = result;
+    return;
 })
 
 document.getElementById("multiply").addEventListener("click", function () {
@@ -17,6 +19,7 @@ document.getElementById("multiply").addEventListener("click", function () {
     const number2 = parseFloat(document.getElementById("number2").value) || 0;
     const result = number1 * number2;
     document.getElementById("calculation-result").textContent = result;
+    return;
 })
 
 document.getElementById("divide").addEventListener("click", function () {
@@ -28,4 +31,5 @@ document.getElementById("divide").addEventListener("click", function () {
         const result = number1 / number2;
         document.getElementById("calculation-result").textContent = result;
     }
+    return;
 })
