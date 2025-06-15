@@ -1,6 +1,6 @@
 function checkAnswer() {
   const correctAnswer = "4";
-  const userAnswer = document.querySelector('input[name="quiz"]:checked');
+  const userAnswer = document.querySelector('input[name="quiz"]:checked').value;
 
   // Check if the user input is empty
   if (!userAnswer) {
@@ -8,10 +8,8 @@ function checkAnswer() {
       "Please select an answer.";
     return;
   }
-    // Check if the user input matches the correct answer
-    const correctAnswerValue = userAnswer.value;
 
-  if (correctAnswerValue === correctAnswer) {
+  if (userAnswer === correctAnswer) {
     document.querySelector("#feedback").textContent = "Correct! Well done.";
   } else {
     document.querySelector("#feedback").textContent =
